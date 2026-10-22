@@ -30,7 +30,9 @@
 <div style="display:flex;gap:28px;align-items:center;flex-wrap:wrap;font-size:16px;font-weight:600">
 <a href="#videos">Vídeos</a>
 <a href="#sobre">Sobre</a>
-<a href="#inscrever" style="background:#D92D20;color:#fff;padding:12px 24px;border-radius:6px;font-weight:600;text-transform:uppercase;letter-spacing:1px">Inscreva-se</a>
+<!-- Topo: Inscreva-se -->
+<a href="https://www.youtube.com/channel/UCAHNIqJTD9ditXA36sQaSRw?sub_confirmation=1" target="_blank" rel="noopener" style="background:#D92D20;color:#fff;padding:12px 24px;border-radius:6px;font-weight:600;text-transform:uppercase;letter-spacing:1px">Inscreva-se</a>
+
 </div>
 </div>
 
@@ -40,17 +42,19 @@
 <h1 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-style:italic;font-weight:800;text-transform:uppercase;font-size:104px;line-height:0.92;letter-spacing:-1px">Notícias curtas e animadas.</h1>
 <p style="margin:0;font-size:20px;line-height:1.5;max-width:520px;color:#B7C2D0">As notícias do mundo dos esportes contadas em animação, em vídeos curtos para você ficar por dentro em segundos.</p>
 <div style="display:flex;gap:16px;flex-wrap:wrap">
-<a href="#inscrever" style="background:#D92D20;color:#fff;padding:18px 34px;border-radius:6px;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:1px">Assistir no YouTube</a>
+<!-- Hero: Assistir no YouTube -->
+<a href="https://www.youtube.com/channel/UCAHNIqJTD9ditXA36sQaSRw" target="_blank" rel="noopener" style="background:#D92D20;color:#fff;padding:18px 34px;border-radius:6px;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:1px">Assistir no YouTube</a>
+
 <a href="#videos" style="border:2px solid #F4F7FB;padding:16px 32px;border-radius:6px;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:1px">Ver os últimos</a>
 </div>
-</div>
-<div style="flex:1 1 320px;display:flex;justify-content:center">
-<div style="position:relative;width:260px;height:462px;border-radius:32px;background:linear-gradient(160deg,#16314F,#0B1624);border:4px solid #C6F135;display:flex;align-items:flex-end;padding:24px;box-sizing:border-box;transform:rotate(4deg);overflow:hidden">
-<div style="position:absolute;left:50%;top:90px;width:110px;height:110px;margin-left:-55px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#C9D3DF 60%,#8A97A8);border:3px solid #0B1624"></div>
-<div style="position:relative;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-style:italic;text-transform:uppercase;font-size:30px;line-height:1">Esporte em animação</div>
-</div>
-</div>
-</div>
+    </div>
+        <div style="flex:1 1 320px;display:flex;justify-content:center">
+            <div style="position:relative;width:260px;height:462px;border-radius:32px;background:linear-gradient(160deg,#16314F,#0B1624);border:4px solid #C6F135;display:flex;align-items:flex-end;padding:24px;box-sizing:border-box;transform:rotate(4deg);overflow:hidden">
+                <div style="position:absolute;left:50%;top:90px;width:110px;height:110px;margin-left:-55px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#C9D3DF 60%,#8A97A8);border:3px solid #0B1624"></div>
+                <div style="position:relative;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-style:italic;text-transform:uppercase;font-size:30px;line-height:1">Esporte em animação</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div style="background:#C6F135;color:#0B1624;transform:skewY(-1.5deg);margin:-24px 0 24px;padding:14px 48px;display:flex;gap:40px;flex-wrap:wrap;font-family:'Barlow Condensed',sans-serif;font-weight:800;font-style:italic;text-transform:uppercase;font-size:24px;letter-spacing:2px">
@@ -80,8 +84,10 @@ fetch("videos.json?v=" + Date.now())
   .catch(e => { box.textContent = "Erro: " + e.message; });
 </script>
 </div>
+
+
     
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3764976302078170"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3764976302078170"
      crossorigin="anonymous"></script>
 <!-- anuncios-google -->
 <ins class="adsbygoogle"
@@ -95,13 +101,14 @@ fetch("videos.json?v=" + Date.now())
 </script>
   
 <div id="sobre" style="display:flex;flex-wrap:wrap;gap:48px;padding:88px 48px;background:repeating-linear-gradient(115deg,rgba(255,255,255,0.04) 0 48px,rgba(255,255,255,0) 48px 96px),#0B1624">
-<h2 style="flex:1 1 300px;margin:0;font-family:'Barlow Condensed',sans-serif;font-style:italic;text-transform:uppercase;font-size:60px;line-height:0.95;font-weight:800;color:#C6F135">Sobre o canal</h2>
-<p style="flex:2 1 400px;margin:0;font-size:20px;line-height:1.6;color:#B7C2D0">O ojornaleirolipe traz notícias curtas e animadas do mundo dos esportes.</p>
+    <h2 style="flex:1 1 300px;margin:0;font-family:'Barlow Condensed',sans-serif;font-style:italic;text-transform:uppercase;font-size:60px;line-height:0.95;font-weight:800;color:#C6F135">Sobre o canal</h2>
+    <p style="flex:2 1 400px;margin:0;font-size:20px;line-height:1.6;color:#B7C2D0">O Lipe traz notícias curta e animada do mundo esportivo!.</p>
 </div>
 
 <div id="inscrever" style="margin:0 48px 64px;padding:64px 48px;border-radius:12px;background:repeating-linear-gradient(115deg,rgba(0,0,0,0.12) 0 40px,rgba(0,0,0,0) 40px 80px),#D92D20;color:#fff;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center">
-<h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-style:italic;text-transform:uppercase;font-size:64px;line-height:1;font-weight:800">Não perca o próximo Short</h2>
-<a href="#" style="background:#fff;color:#0B1624;padding:18px 36px;border-radius:6px;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:1px">Inscrever-se no canal</a>
+    <h2 style="margin:0;font-family:'Barlow Condensed',sans-serif;font-style:italic;text-transform:uppercase;font-size:64px;line-height:1;font-weight:800">Não perca o próximo Short</h2>
+    <!-- Final: Inscrever-se no canal -->
+    <a href="https://www.youtube.com/channel/UCAHNIqJTD9ditXA36sQaSRw?sub_confirmation=1" target="_blank" rel="noopener" style="background:#fff;color:#0B1624;padding:18px 36px;border-radius:6px;font-weight:600;font-size:18px;text-transform:uppercase;letter-spacing:1px">Inscrever-se no canal</a>
 </div>
 
 <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;padding:0 48px 48px;font-size:15px;color:#B7C2D0">
