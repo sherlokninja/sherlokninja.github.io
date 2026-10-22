@@ -1,3 +1,15 @@
+name: Atualizar shorts
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
       - name: Buscar shorts
         run: |
           CHANNEL_ID="UCAHNIqJTD9ditXA36sQaSRw"
@@ -21,3 +33,9 @@
           echo "[${OUT%,}]" > videos.json
           cat videos.json
           rm feed.xml
+      - name: Salvar
+        run: |
+          git config user.name "bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add videos.json
+          git diff --cached --quiet || (git commit -m "atualiza shorts" && git push)
