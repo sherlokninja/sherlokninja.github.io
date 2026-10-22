@@ -13,7 +13,7 @@ jobs:
       - name: Buscar shorts
         run: |
           CHANNEL_ID="UCAHNIqJTD9ditXA36sQaSRw"
-          PLAYLIST="UUSH${CHANNEL_ID:2}"
+          PLAYLIST="PLTDh5tDTyWE"
           curl -s "https://www.youtube.com/feeds/videos.xml?playlist_id=$PLAYLIST" -o feed.xml
           python3 - <<'EOF'
           import re, json
